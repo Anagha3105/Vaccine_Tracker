@@ -1,0 +1,97 @@
+<html>
+   <body>
+      <form action = "/submit" method = "post" id="form1">
+
+<p>
+<label>Name
+<input type="text" name="name" required>
+</label> 
+</p>
+
+<p>
+<label>Age
+<input type="text" name="age" required> yrs
+</label>
+</p>
+
+<p>
+<label> Gender <br>
+<input type="radio" id="male" name="gender" value="male" required checked>
+ <label for="male">Male</label><br>
+ <input type="radio" id="female" name="gender" value="female">
+ <label for="female">Female</label><br>
+</label>
+</p>
+  
+<p>
+<label> Are you a healthcare worker? Includes etc <br>
+<input type="radio" id="yes" name="health" value="yes" required checked>
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="health" value="no">
+  <label for="no">No</label><br>
+</label>
+</p>
+
+<p>
+<label> Are you an essential worker? Includes etc <br>
+<input type="radio" id="yes" name="essential" value="yes" required checked>
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="essential" value="no">
+  <label for="no">No</label><br>
+</label>
+</p>
+
+<p>
+<label> Do you have any of these comorbidities. Put list. <br>
+<input type="radio" id="yes" name="comorb" value="yes" required checked>
+  <label for="yes">Yes, I have one or more of these health conditions</label><br>
+  <input type="radio" id="no" name="comorb" value="no">
+  <label for="no">No, I do not have any of these health conditions</label><br>
+</label>
+</p>
+
+<p>
+<label> How would you classify your activity level? <br>
+<input type="radio" id="sed" name="activity" value="sed" required checked>
+  <label for="yes">Sedentary (exercise rarely) </label><br>
+  <input type="radio" id="act" name="activity" value="act">
+  <label for="no">Active (exercise once in a while) </label><br>
+  <input type="radio" id="ath" name="activity" value="ath">
+  <label for="no">Athletic (exercise regularly)</label><br>
+</label>
+</p>
+
+<p>
+<label> Do you live in a hotspot (check ur aarogya setu app) <br>
+<input type="radio" id="yes" name="hot" value="yes" required checked>
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="hot" value="no">
+  <label for="no">No</label><br>
+</label>
+</p>
+
+<p>
+<label> Do you or can you work from home? <br>
+<input type="radio" id="yes" name="wfh" value="yes" required checked>
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="wfh" value="no">
+  <label for="no">No</label><br>
+</label>
+</p>
+
+<p>
+<label> Have you recovered from COVID-19 in the past 3 months? <br>
+<input type="radio" id="yes" name="antibody" value="yes" required checked>
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="antibody" value="no">
+  <label for="no">No</label><br>
+</label>
+</p>
+
+<button type="submit" value="Submit">Submit</button>	
+</form>
+		
+		
+
+</body>
+</html>
