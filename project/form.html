@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+	<head> 
+	
+		<title>Vaccine Registration Form</title>
+	    <h1 style="align-content: center" style="color: darkblue" > Vaccine Registration Form</h1>
+		<p>Kindly fill in all the details correctly in the form below. </p>
+	</head>
+	<style>
+input[type=text], select {
+  width:30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: inherit;
+}
+
+		
+
+input[type=number] {
+  width:10%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+body {
+  background-image: url("lastry.png");
+  background-repeat: no-repeat;
+  background-position: right 50%,30%;
+  margin-right: 200px;
+  background-attachment: fixed;
+}
+		
+		
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+body {background-color: powderblue;}
+h1   {color: darkblue;
+	  font-family: verdana;
+	  border: medium  solid }
+		
+input[type=submit]:hover {
+  background-color: #45a039;
+}
+
+
+
+</style>
+
+	 
+   <body style="background-color: lightblue" style="text-align:center">
+      <form action = "/" method = "post">
+
+<p>
+<label>1. Name : 
+<input type="text" name="name" required placeholder="Enter your name">
+</label> 
+</p>
+
+<p>
+<label>2. Age : 
+<input type="number" name="age" placeholder="Enter age"> yrs
+</label>
+</p>
+
+<p>
+<label>3. Gender : <br>
+<input type="radio" id="male" name="gender" value="male">
+ <label for="male">Male</label><br>
+ <input type="radio" id="female" name="gender" value="female">
+ <label for="female">Female</label><br>
+ <input type="radio" id="non-binary" name="gender" value="non-binary">
+ <label for="non binary">Non-Binary</label><br>
+ <input type="text" name="gender" required placeholder="Specify">
+ <label for="If other, specify"> </label><br>
+	
+</label>
+</p>
+  
+<p>
+<label>4. Are you a healthcare worker? Includes etc <br>
+  <select id="yes" name="health">
+  <option value="yes">Click to view</option>
+  <option value="yes">Medical Doctor-Generalist Practitioner</option>
+  <option value="yes">Medical Doctor-Specialist Practitioner</option>
+  <option value="yes">Public Health Worker</option>
+  <option value="yes">Pharmacist</option>
+  <option value="yes">Nurse</option>
+  <option value="yes">Medical Physicist</option>
+  <option value="yes">Clinical Psychologist</option>	
+  <option value="yes">Social Workers</option>
+  <option value="yes">Medical Secretary</option>
+  <option value="yes">Ambulance Driver</option>
+  <option value="yes">Hospital Staff</option>
+  <option value="yes">Lab Technician</option>
+  <option value="yes">Auxiliary Nurse Midwife</option>
+  <option value="yes">Physical/Occupational Therapist</option>
+  <option value="yes">Infection control and quality assurance personnel</option>
+  <option value="yes">Chiropractors</option>
+  <option value="yes">Diagnostic and therapeutic technicians</option>
+  <option value="yes">Sanitarians</option>
+  <option value="yes">Respiratory therapist</option>
+  
+
+</select><br>
+<input type="radio" id="yes" name="health" value="yes">
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="health" value="no">
+  <label for="no">No</label><br>
+</label>
+</p>
+
+<p>
+<label>5. Are you an essential worker?<br>
+  <select id="yes" name="essential">
+  <option value="yes">Click to view</option>
+  <option value="yes">Healthcare Provider</option>
+  <option value="yes">Sanitarian</option>
+  <option value="yes">Food Service</option>
+  <option value="yes">Housekeeping</option>
+  <option value="yes">Hospital and laboratory personnel</option>
+  <option value="yes">Worker in other medical and biomedical facilities</option>
+  <option value="yes">Pharmacy Employees</option>	
+  <option value="yes">Police Department</option>
+  <option value="yes">Law Enforcement Worker</option>
+  <option value="yes">Public Safety Officer</option>
+  <option value="yes">Food and Agriculture Worker</option>
+  <option value="yes">Energy Sector Worker</option>
+  <option value="yes">Electricity Industry Worker</option>
+  <option value="yes">Waste and Waterwaste Essential Worker</option>
+  <option value="yes">Transportation Worker</option>
+  <option value="yes">Logistics Worker</option>
+  <option value="yes">Public Works and Infrastructure Service Worker</option>
+  <option value="yes">Communications and Information Technology Workers</option>
+  <option value="yes">Community/Government Worker</option>
+  <option value="yes">Critical Manufacturing Worker</option>
+  <option value="yes">Chemical Essential Worker</option>
+  <option value="yes">Defense Industrial Base Worker</option>
+  <option value="yes">Commercial Facilities Workers Deemed Essential </option>
+  <option value="yes">Hygiene Products and Services Workers</option>
+</select><br>
+<input type="radio" id="yes" name="essential" value="yes">
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="essential" value="no">
+  <label for="no">No</label><br>
+</label>
+</p>
+
+<p>
+<label>6. Do you have any of these comorbidities?<br>
+<select id="comorbities" name="comorbities">
+  <option value="yes">Click to view</option>
+  <option value="yes">Cancer</option>
+  <option value="yes">Chronic kidney disease</option>
+  <option value="yes">COPD (chronic obstructive pulmonary disease)</option>
+  <option value="yes">Heart conditions, such as heart failure, coronary artery disease, or cardiomyopathies</option>
+  <option value="yes">Immunocompromised state (weakened immune system) from solid organ transplant</option>
+  <option value="yes">Obesity (body mass index [BMI] of 30 kg/m2 or higher but < 40 kg/m2)</option>
+  <option value="yes">Sickle cell disease</option>	
+  <option value="yes">Type 2 diabetes mellitus</option>
+  <option value="yes">Hypertension or high blood pressure</option>
+  <option value="yes">Thalassemia (a type of blood disorder)</option>
+  <option value="yes">Cystic fibrosis</option>
+  <option value="yes">Pregnant</option>
+
+</select><br>
+<input type="radio" id="yes" name="comorb" value="yes">
+  <label for="yes">Yes, I have one or more of these health conditions</label><br>
+  <input type="radio" id="no" name="comorb" value="no">
+  <label for="no">No, I do not have any of these health conditions</label><br>
+</label>
+</p>
+
+<p>
+<label>7. How would you classify your activity level? <br>
+<input type="radio" id="sed" name="activity" value="sed">
+  <label for="yes">Sedentary (exercise rarely) </label><br>
+  <input type="radio" id="act" name="activity" value="act">
+  <label for="no">Active (exercise once in a while) </label><br>
+  <input type="radio" id="ath" name="activity" value="ath">
+  <label for="no">Athletic (exercise regularly)</label><br>
+</label>
+</p>
+
+<p>
+<label>8. Do you live in a hotspot (check ur aarogya setu app) <br>
+<input type="radio" id="yes" name="hot" value="yes">
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="hot" value="no">
+  <label for="no">No</label><br>
+</label>
+</p>
+
+<fieldset>
+<legend><i>8. Do you have to travel as part of your job? Check all that apply*</i></legend> 
+<br>
+<p><label> <input type="checkbox" name="travela" value="abroad"> I travel to other countries </label></p>
+<p><label> <input type="checkbox" name="traveld" value="domestic"> I travel within India </label></p>
+</fieldset>
+
+
+<p>
+<label>9. Do you or can you work from home? <br>
+<input type="radio" id="yes" name="wfh" value="yes">
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="wfh" value="no">
+  <label for="no">No</label><br>
+</label>
+</p>
+
+<p>
+<label>10. Have you recovered from COVID-19 in the past 3 months? <br>
+<input type="radio" id="yes" name="antibody" value="yes">
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="antibody" value="no">
+  <label for="no">No</label><br>
+</label>
+</p>
+<button class="button button1">Submit</button>
+
+
+	</form>
+   </body>
+</html>
